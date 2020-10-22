@@ -49,6 +49,9 @@ $(document).ready(function() {
         operator = $(this).vaL();
 
         $("#operator").text($(this).text());
+    });
 
+    $(".equal").on("click", function() {
+        //if already calculated, quit
     });
 })
