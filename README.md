@@ -1,12 +1,10 @@
-# Project Name
+# Calculator App
 
-#### Technologies used: 
+#### Technologies used: HTML, CSS, Bootstrap, JavaScript, jQuery 
 
-This application does . . . . .
+This application is a simple calculator that allows you to add, subtract, multiply, divide, and even do exponents.
 
-How to use
-
-* link to deployed application:
+* link to deployed application: https://fbuonojr.github.io/calculator/
 
 ![](./images/)
 
