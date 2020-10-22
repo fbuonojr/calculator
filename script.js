@@ -9,18 +9,19 @@ $(document).ready(function () {
 
     //function to reset our calculator
     function initializeCalculator() {
-        firstNumber = 0;
-        secondNumber = 0;
+        firstNumber = "";
+        secondNumber = "";
         operator = "";
-        result = 0;
+        // result = "";
         isOperatorChosen = false;
         isCalculated = false;
 
-        $("#first-number, #second-Number, #operator, #result").empty();
+        $("#first-number, #second-number, #operator, #result").empty();
     }
 
     //click function for number buttons
     $(".number").on("click", function () {
+
         //see if calculation has already been done
         if (isCalculated) {
             return false;
@@ -28,11 +29,11 @@ $(document).ready(function () {
 
         // check to see if operator has been chosen: if yes write second number if no write first
         if (isOperatorChosen) {
-            secondNumber += $(this).vaL();
+            secondNumber += $(this).val();
             $("#second-number").text(secondNumber);
         }
         else {
-            firstNumber += $(this).vaL();
+            firstNumber += $(this).val();
             $("#first-number").text(firstNumber);
         }
     });
@@ -46,7 +47,7 @@ $(document).ready(function () {
 
         isOperatorChosen = true;
 
-        operator = $(this).vaL();
+        operator = $(this).val();
 
         $("#operator").text($(this).text());
     });
@@ -90,4 +91,4 @@ $(document).ready(function () {
     });
 
     initializeCalculator();
-})
+});
