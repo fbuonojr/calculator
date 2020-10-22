@@ -87,5 +87,7 @@ $(document).ready(function () {
 
     $(".clear").on("click", function() {
         initializeCalculator();
-    })
+    });
+
+    initializeCalculator();
 })
