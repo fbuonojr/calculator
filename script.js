@@ -37,7 +37,18 @@ $(document).ready(function() {
         }
     });
 
+    //click function for operator buttons
     $(".operator").on("click", function() {
-        
-    })
+        //check if first number is selected or if a calculation has already been done
+        if(!firstNumber || isCalculated){
+            return false;
+        }
+
+        isOperatorChosen = true;
+
+        operator = $(this).vaL();
+
+        $("#operator").text($(this).text());
+
+    });
 })
