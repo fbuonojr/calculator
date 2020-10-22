@@ -36,4 +36,8 @@ $(document).ready(function() {
             $("#first-number").text(firstNumber);
         }
     });
+
+    $(".operator").on("click", function() {
+        
+    })
 })
