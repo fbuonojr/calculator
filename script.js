@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     //global variables
     var firstNumber = 0;
     var secondNumber = 0;
@@ -20,14 +20,14 @@ $(document).ready(function() {
     }
 
     //click function for number buttons
-    $(".number").on("click", function(){
+    $(".number").on("click", function () {
         //see if calculation has already been done
-        if(isCalculated){
+        if (isCalculated) {
             return false;
         }
 
         // check to see if operator has been chosen: if yes write second number if no write first
-        if(isOperatorChosen){
+        if (isOperatorChosen) {
             secondNumber += $(this).vaL();
             $("#second-number").text(secondNumber);
         }
@@ -38,9 +38,9 @@ $(document).ready(function() {
     });
 
     //click function for operator buttons
-    $(".operator").on("click", function() {
+    $(".operator").on("click", function () {
         //check if first number is selected or if a calculation has already been done
-        if(!firstNumber || isCalculated){
+        if (!firstNumber || isCalculated) {
             return false;
         }
 
@@ -51,7 +51,35 @@ $(document).ready(function() {
         $("#operator").text($(this).text());
     });
 
-    $(".equal").on("click", function() {
+    $(".equal").on("click", function () {
         //if already calculated, quit
+        if (isCalculated) {
+            return false;
+        }
+
+        isCalculated = true;
+
+        firstNumber = parseInt(firstNumber);
+        secondNumber = parseInt(secondNumber);
+
+        if (operator === "plus") {
+            result = firstNumber + secondNumber;
+        }
+
+        else if (operator === "minus") {
+            result = firstNumber - secondNumber;
+        }
+
+        else if (operator === "times") {
+            result = firstNumber * secondNumber;
+        }
+
+        else if (operator === "divide") {
+            result = firstNumber / secondNumber;
+        }
+
+        else if (operator === "power") {
+            result = Math.pow(firstNumber, secondNumber);
+        }
     });
 })
