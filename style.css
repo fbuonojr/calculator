@@ -2,3 +2,13 @@
 button > span {
     font-size: 2.5rem;
 }
+
+.jumbotron {
+    background-color: black;
+    border-bottom: 5px solid white;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
