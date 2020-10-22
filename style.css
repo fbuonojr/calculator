@@ -1,0 +1,4 @@
+/* all spans that are direct children of buttons */
+button > span {
+    font-size: 2.5rem;
+}
