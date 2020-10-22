@@ -81,5 +81,7 @@ $(document).ready(function () {
         else if (operator === "power") {
             result = Math.pow(firstNumber, secondNumber);
         }
+
+        $("#result").text(result);
     });
 })
