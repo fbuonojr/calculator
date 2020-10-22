@@ -84,4 +84,8 @@ $(document).ready(function () {
 
         $("#result").text(result);
     });
+
+    $(".clear").on("click", function() {
+        initializeCalculator();
+    })
 })
