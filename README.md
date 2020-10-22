@@ -6,6 +6,6 @@ This application is a simple calculator that allows you to add, subtract, multip
 
 * link to deployed application: https://fbuonojr.github.io/calculator/
 
-![](./images/)
+![](./images/calculator.PNG)
 
 ###### Frank Buono- this app was created as practice using an activity from my bootcamp class
